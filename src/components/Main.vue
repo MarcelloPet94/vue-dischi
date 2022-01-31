@@ -52,6 +52,7 @@ export default {
   display: flex;
   justify-content: center;
   background-color: #1e2d3b;
+  padding-top: 24px;
 }
 
 .grid_playlist
