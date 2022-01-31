@@ -1,14 +1,19 @@
 <template>
         <div class="box_album">
-            <img src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg">
-            <h3>ALBUM</h3>
-            <p>ARTISTA</p>
+            <img :src="cover">
+            <h3>{{author}}</h3>
+            <p>{{album}}</p>
         </div>
 </template>
 
 <script>
 export default {
-  name: 'Thumb'
+  name: 'Thumb',
+  props:{
+      cover: String,
+      author: String,
+      album: String
+  }
 }
 </script>
 
@@ -20,7 +25,8 @@ export default {
     padding: 16px;
     margin-bottom: 16px;
     text-align: center;
-    background-color: lightblue;
+    background-color: #2e3a46;
+    color: #fff;
 
     img
     {
