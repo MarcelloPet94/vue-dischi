@@ -1,8 +1,8 @@
 <template>
         <div class="box_album">
-            <img :src="cover">
-            <h3>{{author}}</h3>
-            <p>{{album}}</p>
+            <img :src="spotifyApi.poster">
+            <h3>{{spotifyApi.title}}</h3>
+            <p>{{spotifyApi.author}}</p>
         </div>
 </template>
 
@@ -10,9 +10,7 @@
 export default {
   name: 'Thumb',
   props:{
-      cover: String,
-      author: String,
-      album: String
+    spotifyApi: Object
   }
 }
 </script>
